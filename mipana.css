@@ -5,11 +5,12 @@
 }
 @font-face{
     font-family: "DancingScript";
-    src: url("./tipografias/Dancing_Script/DancingScript-Bold.ttf");
+    src: url("..//Proyecto/tipografias/Roboto/Roboto-Italic.ttf");
 }
 .fondoSalmon{
-    background-color: snow;
-    background-color: rgb(241, 149, 28);
+    background-color: #ff4e00;
+    background-image: linear-gradient(to bottom, 315deg, #ff4e00 0%, #ec9f05 74%);
+
 }
 .logo1{
     margin-left: 42%;
@@ -98,6 +99,14 @@ h3{
     height: 60px;
     margin-left:2%;
 }
+.diseño{
+    width: 3s;
+    height: 3s;
+}
+.diseño:hover{
+width: 50%;
+height: 300px;
+}
 /*Estilo de la seción PANADERÍA*/
 .logone{ 
     height: 20%;
@@ -171,7 +180,8 @@ h3{
 
 }
 .BodyPastas{
-    background-image: url("..//Proyecto/ravioles/ñoquis.jpeg");
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 }
 .estilo{
     border-style: groove;
@@ -268,7 +278,7 @@ footer{
 }
 /*Estilo de Sucursales*/
 body{
-    background-color: violet;
+    background-color: #f39f86;background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
 }
 h2{
     background-color: black;
