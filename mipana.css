@@ -56,7 +56,7 @@ body{
     font-family:"DancingScript";
 }
 h1{
-    background-color: blue;
+    background-color: orangered;
     color: yellow;
     margin-left: 20px;
     margin-right: 20px;
@@ -114,8 +114,85 @@ height: 300px;
     margin-left: 40%;
 }
 .BodyPanaderia{
-    background-image: url("../Proyecto/Logo/logo.png");
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);    
 }
+/*animacion*/
+.bg-5{
+       background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
+     }
+    .animated-shadow {
+      color: #ffffff;
+      font: normal 140px Varela Round, sans-serif;
+      height: 140px;
+      left: 0;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      animation: move linear 2000ms infinite;
+      z-index: 2
+    }
+    /*Animación para rotar las sombras*/
+    @keyframes move {
+      0%{
+        text-shadow:
+          4px -4px 0 #da0641,
+          3px -3px 0 #da0641,
+          2px -2px 0 #da0641,
+          1px -1px 0 #da0641,
+          -4px 4px 0 #13f1fc,
+          -3px 3px 0 #13f1fc,
+          -2px 2px 0 #13f1fc,
+          -1px 1px 0 #13f1fc
+
+        ;
+      }
+      25% {
+        text-shadow:
+          -4px -4px 0 #13f1fc,
+          -3px -3px 0 #13f1fc,
+          -2px -2px 0 #13f1fc,
+          -1px -1px 0 #13f1fc,
+          4px 4px 0 #da0641,
+          3px 3px 0 #da0641,
+          2px 2px 0 #da0641,
+          1px 1px 0 #da0641
+        ;
+      }
+      50% {text-shadow:
+          -4px 4px 0 #da0641,
+          -3px 3px 0 #da0641,
+          -2px 2px 0 #da0641,
+          -1px 1px 0 #da0641,
+          4px -4px 0 #13f1fc,
+          3px -3px 0 #13f1fc,
+          2px -2px 0 #13f1fc,
+          1px -1px 0 #13f1fc;
+      }
+      75% {
+        text-shadow:
+          4px 4px 0 #13f1fc,
+          3px 3px 0 #13f1fc,
+          2px 2px 0 #13f1fc,
+          1px 1px 0 #13f1fc,
+          -4px -4px 0 #da0641,
+          -3px -3px 0 #da0641,
+          -2px -2px 0 #da0641,
+          -1px -1px 0 #da0641;
+      }
+      100%{
+          text-shadow:
+          4px -4px 0 #da0641,
+          3px -3px 0 #da0641,
+          2px -2px 0 #da0641,
+          1px -1px 0 #da0641,
+          -4px 4px 0 #13f1fc,
+          -3px 3px 0 #13f1fc,
+          -2px 2px 0 #13f1fc,
+          -1px 1px 0 #13f1fc;
+      }
+    }
 h2{
     background-color: rgb(27, 207, 231);
     color: black;
@@ -228,7 +305,13 @@ h3{
 }
 /* Estilo de Pasteleía*/
 .BodyFondoDos{
-    background-image: url("..//Proyecto/Pastelería/rosquillas.jpeg");
+    --color1: rgb(252, 166, 8);
+  background-image: linear-gradient(var(--color1), #050632);
+  transition: 1s;
+  height: 100vh;
+}
+.BodyFondoDos:hover{
+  --color1: white;
 }
 .texto{
     text-align: left;
